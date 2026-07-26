@@ -24,7 +24,7 @@ export default function ThankYouPage() {
               Your application has been submitted successfully.
             </p>
             <p className="mt-4 text-base leading-7 text-white/74 sm:text-lg">
-              We’ve received your details and will review your business before the consultation.
+              We&apos;ve received your details and will review your business before the consultation.
             </p>
             <p className="mt-4 text-base leading-7 text-white/74 sm:text-lg">
               Please watch the short video below before we contact you.
@@ -55,13 +55,13 @@ export default function ThankYouPage() {
                 <div className="space-y-5">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-200">
-                      What you’ll learn in this video
+                      What you&apos;ll learn in this video
                     </p>
                     <ul className="mt-4 space-y-3 text-base leading-7 text-white/76">
                       <li>Why many businesses struggle to get consistent customers online</li>
                       <li>The most common marketing mistakes that waste time and money</li>
                       <li>How AI can help improve lead generation and follow-up</li>
-                      <li>What we’ll cover during your free consultation</li>
+                      <li>What we&apos;ll cover during your free consultation</li>
                     </ul>
                   </div>
 
@@ -89,7 +89,7 @@ export default function ThankYouPage() {
             <div className="rounded-3xl border border-white/10 bg-black/20 p-5 text-left">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-200">Want Faster Support?</p>
               <p className="mt-4 text-base leading-7 text-white/76">
-                If you’d like to speak with us directly or confirm your consultation faster, send us a message on WhatsApp now.
+                If you&apos;d like to speak with us directly or confirm your consultation faster, send us a message on WhatsApp now.
               </p>
               <a
                 href="https://wa.me/9779869107655"
@@ -114,7 +114,7 @@ export default function ThankYouPage() {
           </div>
 
           <p className="mx-auto mt-10 max-w-3xl text-center text-base leading-7 text-white/74 sm:text-lg">
-            We’re excited to help you create a smarter AI-powered marketing strategy for your business.
+            We&apos;re excited to help you create a smarter AI-powered marketing strategy for your business.
           </p>
         </section>
       </div>
