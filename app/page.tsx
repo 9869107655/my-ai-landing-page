@@ -8,13 +8,13 @@ import { Urgency } from "@/components/Urgency";
 import { CTAForm } from "@/components/CTAForm";
 
 export const metadata: Metadata = {
-  title: "Free AI Marketing Consultation",
+  title: "Get More Customers With AI",
   description:
-    "Get your free AI marketing consultation and a customized growth plan for your business.",
+    "We'll analyze your current marketing, identify what's stopping you from getting consistent customers, and show you 3 practical ways AI can help grow your business.",
   openGraph: {
-    title: "Free AI Marketing Consultation",
+    title: "Get More Customers With AI",
     description:
-      "Get your free AI marketing consultation and a customized growth plan for your business."
+      "We'll analyze your current marketing, identify what's stopping you from getting consistent customers, and show you 3 practical ways AI can help grow your business."
   }
 };
 

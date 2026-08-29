@@ -40,19 +40,19 @@ export function Hero() {
 
           <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
             <div className="mb-6 inline-flex items-center rounded-full border border-brand-200/20 bg-white/5 px-4 py-2 text-sm text-brand-100 shadow-[0_0_0_1px_rgba(255,209,77,0.06)]">
-              Free AI Marketing Consultation
+              Get More Customers With AI
             </div>
 
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-7xl">
-              Get Your Free <span className="text-brand-300">AI Marketing Consultation</span> and a Customized Growth Plan for Your Business
+              GET MORE CUSTOMERS WITH <span className="text-brand-300">AI</span>
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-white/72 sm:text-lg">
-              Discover what's holding your marketing back and receive practical AI-driven recommendations to help you attract more qualified leads and improve your marketing strategy.
+              We&apos;ll analyze your current marketing, identify what&apos;s stopping you from getting consistent customers, and show you 3 practical ways AI can help grow your business.
             </p>
 
             <p className="mt-5 max-w-2xl text-sm leading-7 text-white/60 sm:text-base">
-              If you're a small or medium business owner struggling to generate consistent customers, this free one-to-one consultation is for you.
+              This free growth plan is designed for business owners who want clearer marketing direction and more customers.
             </p>
 
             <div className="mt-8">
@@ -60,7 +60,7 @@ export function Hero() {
                 href="#consultation-form"
                 className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-200 via-brand-300 to-brand-400 px-8 py-4 text-base font-semibold text-black shadow-[0_18px_50px_rgba(255,209,77,0.24)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_60px_rgba(255,209,77,0.3)]"
               >
-                Book Free Consultation
+                GET MY FREE GROWTH PLAN
               </a>
             </div>
           </div>
