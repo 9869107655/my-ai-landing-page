@@ -1,7 +1,7 @@
 export function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pb-14 pt-6 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-[#070707] shadow-[0_40px_120px_rgba(0,0,0,0.55)]">
+      <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-[#141414] shadow-[0_40px_120px_rgba(0,0,0,0.4)]">
         <div className="grid-lines relative isolate px-5 py-14 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute left-1/2 top-12 h-72 w-72 -translate-x-1/2 rounded-full bg-brand-300/12 blur-3xl" />
@@ -57,7 +57,7 @@ export function Hero() {
 
             <div className="mt-8">
               <a
-                href="#consultation-form"
+                href="#booking-form"
                 className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-200 via-brand-300 to-brand-400 px-8 py-4 text-base font-semibold text-black shadow-[0_18px_50px_rgba(255,209,77,0.24)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_60px_rgba(255,209,77,0.3)]"
               >
                 GET MY FREE GROWTH PLAN

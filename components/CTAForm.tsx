@@ -61,7 +61,7 @@ export function CTAForm() {
             </div>
           </div>
 
-            <div className="glass-panel rounded-[2rem] p-4 sm:p-6 lg:p-8">
+            <div id="booking-form" className="scroll-mt-6 glass-panel rounded-[2rem] p-4 sm:p-6 lg:p-8">
               <div
                 className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-white"
                 dangerouslySetInnerHTML={{ __html: embedHtml }}
