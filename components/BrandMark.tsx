@@ -8,7 +8,7 @@ export function BrandMark() {
       width={220}
       height={80}
       priority
-      className="h-auto w-[150px] drop-shadow-[0_0_10px_rgba(0,0,0,0.35)] sm:w-[190px]"
+      className="h-auto w-[150px] brightness-125 contrast-110 drop-shadow-[0_0_12px_rgba(255,225,134,0.42)] sm:w-[190px]"
     />
   );
 }
