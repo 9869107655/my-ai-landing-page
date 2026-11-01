@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { SiteShell } from "@/components/SiteShell";
+export default function NotFound() { return <SiteShell><section className="container flex min-h-[65vh] flex-col items-center justify-center text-center"><p className="eyebrow">404</p><h1 className="mt-3 text-4xl font-bold text-slate-900">This page has moved on.</h1><p className="mt-4 max-w-md text-lg text-slate-600">The page you were looking for is not here, but there is plenty to explore.</p><Link className="mt-7 rounded-full bg-teal-700 px-5 py-3 text-sm font-bold text-white" href="/">Return home</Link></section></SiteShell>; }

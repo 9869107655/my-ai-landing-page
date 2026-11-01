@@ -1,33 +1,20 @@
 import type { Metadata } from "next";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Problem } from "@/components/Problem";
-import { Benefits } from "@/components/Benefits";
-import { Process } from "@/components/Process";
-import { Urgency } from "@/components/Urgency";
-import { CTAForm } from "@/components/CTAForm";
+import Link from "next/link";
+import { ButtonLink } from "@/components/ButtonLink";
+import { Check, Icon } from "@/components/Icons";
+import { SectionHeading } from "@/components/SectionHeading";
+import { SiteShell } from "@/components/SiteShell";
 
-export const metadata: Metadata = {
-  title: "Get More Customers With AI",
-  description:
-    "We'll analyze your current marketing, identify what's stopping you from getting consistent customers, and show you 3 practical ways AI can help grow your business.",
-  openGraph: {
-    title: "Get More Customers With AI",
-    description:
-      "We'll analyze your current marketing, identify what's stopping you from getting consistent customers, and show you 3 practical ways AI can help grow your business."
-  }
-};
+export const metadata: Metadata = { title: "AI-Powered Digital Marketing for Growing Businesses", description: "Digital Binam helps small and medium businesses get more leads, save time, and grow with a simple AI-powered marketing plan." };
+const services = [["AI Marketing Strategy","Get a simple plan that shows what to do first."],["Social Media Marketing","Create content that builds trust and starts conversations."],["Content Systems","Create useful content faster and stay consistent."],["Lead Generation","Turn more website and social visitors into enquiries."],["AI Automation","Save time on repeat marketing tasks."],["SEO & Local Visibility","Help the right local customers find your business."]];
+const problems = ["You need more steady leads and sales.", "Your social media takes time but brings few enquiries.", "You are busy running the business and marketing gets delayed.", "You are not sure which marketing activity matters most.", "AI feels confusing and difficult to use."];
 
-export default function HomePage() {
-  return (
-    <main className="min-h-screen">
-      <Header />
-      <Hero />
-      <Problem />
-      <Benefits />
-      <Process />
-      <Urgency />
-      <CTAForm />
-    </main>
-  );
-}
+export default function HomePage() { return <SiteShell>
+  <section className="hero-grid overflow-hidden bg-slate-950 py-16 text-white sm:py-24"><div className="container grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr]"><div><p className="eyebrow text-cyan-300">AI marketing made simple</p><h1 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.06] sm:text-5xl lg:text-6xl">Get More Leads and Sales with <span className="text-cyan-300">AI-Powered</span> Digital Marketing</h1><p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">Digital Binam helps small and medium businesses attract the right customers, save time, and grow with clear marketing strategies and practical AI tools.</p><div className="mt-8 flex flex-col gap-3 sm:flex-row"><ButtonLink>Book a Free Consultation</ButtonLink><ButtonLink href="/services" variant="secondary">Explore Services</ButtonLink></div><p className="mt-6 flex items-center gap-2 text-sm text-cyan-100"><span className="h-2 w-2 rounded-full bg-[#e89450]" />Leave with a customized Digital Marketing Plan you can use right away.</p></div><div className="relative mx-auto w-full max-w-md"><div className="absolute -inset-8 rounded-full bg-cyan-500/20 blur-3xl" /><div className="relative overflow-hidden rounded-3xl border border-cyan-200/20 bg-slate-900 p-6 shadow-2xl"><p className="text-sm font-bold text-cyan-200">YOUR SIMPLE GROWTH PLAN</p><div className="mt-7 space-y-5">{[["01","Understand your business and goals"],["02","Find the best marketing opportunities"],["03","Take clear next steps"]].map(([number,text])=><div key={number} className="flex items-center gap-4"><span className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-300/40 text-sm font-bold text-cyan-200">{number}</span><span className="font-semibold text-slate-100">{text}</span></div>)}</div><div className="mt-8 h-32 rounded-2xl border border-cyan-200/15 bg-gradient-to-br from-cyan-400/20 to-transparent p-4"><svg viewBox="0 0 300 100" className="h-full w-full" fill="none" aria-hidden="true"><path d="M0 80C42 76 52 54 85 61s36 24 65 11c32-15 35-58 71-43 31 13 43-5 79-18" stroke="#5eead4" strokeWidth="3" strokeLinecap="round"/><circle cx="221" cy="29" r="5" fill="#e89450"/></svg></div></div></div></div></section>
+  <section className="section"><div className="container grid gap-10 lg:grid-cols-[.8fr_1.2fr]"><SectionHeading eyebrow="Does this sound familiar?" title="You are working hard, but marketing is not bringing enough business." text="You do not need more noise. You need a clear plan that fits your business and your time."/><ul className="grid gap-4 sm:grid-cols-2">{problems.map(problem=><li key={problem} className="surface flex gap-3 rounded-2xl p-5 text-slate-700"><Check /><span>{problem}</span></li>)}</ul></div></section>
+  <section className="section bg-white"><div className="container"><SectionHeading eyebrow="How I help" title="Simple marketing that helps your business move forward." text="I focus on practical actions that help you get customers, improve sales, and save time."/><div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{[["Get Better Leads","Reach people who are more likely to buy."],["Turn Interest Into Sales","Make your message and next steps clear."],["Save Time with AI","Use simple tools to handle repeat work."],["Know What to Do Next","Focus on the actions that matter most."]].map(([title,description],index)=><article className="surface rounded-2xl p-6" key={title}><Icon><span className="font-bold">0{index+1}</span></Icon><h3 className="mt-5 text-xl font-bold text-slate-900">{title}</h3><p className="mt-3 leading-7 text-slate-600">{description}</p></article>)}</div></div></section>
+  <section className="section"><div className="container"><div className="flex flex-wrap items-end justify-between gap-5"><SectionHeading eyebrow="Services" title="The support you need to grow with confidence." text="Choose one service or get a plan built around your goals."/><Link className="font-bold text-teal-700 hover:text-teal-900" href="/services">View all services →</Link></div><div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{services.map(([title,description])=><Link href="/services" className="group rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg" key={title}><h3 className="text-xl font-bold text-slate-900">{title}</h3><p className="mt-3 leading-7 text-slate-600">{description}</p><span className="mt-5 inline-block text-sm font-bold text-teal-700">Learn more <span className="transition group-hover:ml-1">→</span></span></Link>)}</div></div></section>
+  <section className="section bg-slate-900 text-white"><div className="container"><SectionHeading eyebrow="How it works" title="Three simple steps to a clearer marketing plan." centered/><div className="mt-12 grid gap-8 md:grid-cols-3">{[["1","Book Your Free Consultation","Tell me about your business and your main goal."],["2","Get Your Custom Digital Marketing Plan","See the most useful opportunities and priorities for your business."],["3","Start Taking Action","Use the plan straight away, with support when you need it."]].map(([number,title,description])=><div className="relative" key={number}><span className="text-5xl font-bold text-cyan-300/70">{number}</span><h3 className="mt-4 text-xl font-bold">{title}</h3><p className="mt-3 leading-7 text-slate-300">{description}</p></div>)}</div></div></section>
+  <section className="section"><div className="container grid gap-8 lg:grid-cols-2"><div><SectionHeading eyebrow="Why Digital Binam" title="Clear advice. Useful tools. Practical results."/><ul className="mt-7 grid gap-4">{["A plan built for your business", "AI tools chosen to save time and improve marketing", "Clear next steps without confusing jargon", "Support designed for small and medium businesses"].map(item=><li key={item} className="flex items-center gap-3 text-lg text-slate-700"><Check />{item}</li>)}</ul></div><div className="rounded-3xl bg-cyan-50 p-8"><p className="eyebrow">Testimonials</p><div className="mt-6 rounded-2xl border border-cyan-100 bg-white p-6"><p className="text-lg font-semibold text-slate-800">“Client testimonial coming soon”</p><p className="mt-3 text-sm text-slate-500">Verified client feedback will be added here.</p></div><div className="mt-4 rounded-2xl border border-cyan-100 bg-white p-6"><p className="text-lg font-semibold text-slate-800">“Client testimonial coming soon”</p><p className="mt-3 text-sm text-slate-500">Verified client feedback will be added here.</p></div></div></div></section>
+  <section className="pb-20"><div className="container rounded-3xl bg-[#087ea4] px-6 py-12 text-white sm:px-12"><div className="max-w-2xl"><p className="eyebrow text-cyan-100">Your next step</p><h2 className="mt-3 text-3xl font-bold sm:text-4xl">Ready for a Clearer Marketing Plan?</h2><p className="mt-4 text-lg leading-8 text-cyan-50">Book a free consultation. You will leave with a customized Digital Marketing Plan you can start using immediately.</p><ButtonLink variant="light" className="mt-7">Book a Free Consultation</ButtonLink></div></div></section>
+</SiteShell>; }
